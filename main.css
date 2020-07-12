@@ -22,6 +22,7 @@ html{
 
 body{
     width: 100%;
+    margin:0;
 }
 
 h1{
@@ -130,7 +131,7 @@ header h1{
 
 .members{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .person{
@@ -158,10 +159,13 @@ header h1{
 
 /* what we do */
 .services{
+    width:100%;
+    margin:0;
     text-align: center;
-    padding: 0 5%;
-    background-image: url(./assets/illustrations/desktop/services1x.png), url(./assets/illustrations/desktop/Group\ 37.png);
+    background-image: url(./assets/illustrations/desktop/Group\ 31.png), url(./assets/illustrations/desktop/services1x.png);
     background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto;
+    height: 1200px;
 }
 
 .development img{
@@ -170,15 +174,84 @@ header h1{
 .designing img{
     width: 30px;
 }
-.development{
+.services{
     display: grid;
-    /* grid-template-columns: repeat(10,1fr); */
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr); */
+    grid-template-rows: repeat(2,minmax(600px, auto));
     row-gap: 20px;
-    float: right; 
 }
-.development div{
-    
+div.development, div.designing{
+    line-height:50px;
+    color: white;
+    font-weight: bold;
+}
+div#abc{
+    text-align: left;
+    padding-left:20px;
+}
+div#def{
+    text-align: right;
+    padding-right:20px;
+}
+div.development :nth-child(2){
+    margin-bottom: 10px;
+    margin-left: 10%;
+    border-radius: 50px 0px 0 50px;
+    background-color: #2B9DFF;
+}
+div.development :nth-child(3){
+    margin-bottom: 10px;
+    margin-left: 30%;
+    border-radius: 50px 0px 0 50px;
+    background-color: #2B9DFF;
+}
+div.development :nth-child(4){
+    margin-bottom: 10px;
+    margin-left: 25%;
+    border-radius: 50px 0px 0 50px;
+    background-color: #2B9DFF;
+}
+div.development :nth-child(5){
+    margin-bottom: 10px;
+    margin-left: 40%;
+    border-radius: 50px 0px 0 50px;
+    background-color: #2B9DFF;
+}
+div.development :nth-child(6){
+    margin-bottom: 10px;
+    margin-left: 20%;
+    border-radius: 50px 0px 0 50px;
+    background-color: #2B9DFF;
+}
+div.designing :nth-child(2){
+    margin-bottom: 10px;
+    margin-right: 20%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #2B9DFF;
+}
+div.designing :nth-child(3){
+    margin-bottom: 10px;
+    margin-right: 25%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #2B9DFF;
+}
+div.designing :nth-child(4){
+    margin-bottom: 10px;
+    margin-right: 15%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #2B9DFF;
+}
+div.designing :nth-child(5){
+    margin-bottom: 10px;
+    margin-right: 30%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #2B9DFF;
+}
+div.designing :nth-child(6){
+    margin-bottom: 10px;
+    margin-right: 40%;
+    border-radius: 0px 50px 50px 0px;
+    background-color: #2B9DFF;
 }
 
 
@@ -194,49 +267,98 @@ header h1{
 
 /* what they say about us */
 
-.testominals{
-    margin: 5em 0 10em 0;
-    padding: 0 5%;
+div.testimonials{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, minmax(500px, auto));
+}
+div.testimonial-illus{
     background-image: url(./assets/illustrations/desktop/customer1x.png);
-    background-repeat: no-repeat;
-    background-size: initial;
-    background-position: 110%;
-    background-position-y: bottom;
+    background-size: cover;
 }
-.testominals h1{
+div.person{
     text-align: center;
-    margin-bottom: 3em;
+    padding:50px;
 }
-.customerSays{
-    width: 50%;
+div#ill-1{
+    grid-area: ill-1;
 }
-.customerSays p{
-    position: relative;
-    transform: translateX(30%);
-    margin-bottom: 20px;
-    width: 50%;
+div#text-1{
+    grid-area: text-1;
 }
-.customerSays img{
-    margin-left: 15%;
-    width: 100px;
+div#ill-2{
+    grid-area: ill-2;
 }
-.customerSays h3{
-    margin-left: 15%;
+div#text-2{
+    grid-area: text-2;
 }
-
-
+div#ill-3{
+    grid-area: ill-3;
+}
+div#text-3{
+    grid-area: text-3;
+}
+div#ill-4{
+    grid-area: ill-4;
+}
+div#text-4{
+    grid-area: text-4;
+}
+div#ill-5{
+    grid-area: ill-5;
+}
+div#text-5{
+    grid-area: text-5;
+}
+div.whyElements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, minmax(400px, auto));
+    grid-template-areas:
+    "text-1 ill-1"
+    "ill-2 text-2"
+    "text-3 ill-3"
+    "ill-4 text-4"
+    "text-5 ill-5";
+}
+div.whyElements :nth-child(n){
+    text-align: center;
+}
+div.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, minmax(400px, auto));
+}
+div.projects :nth-child(n){
+    text-align: center;
+}
+div.projects img{
+    width: 30%;
+    height: 50%;
+}
+div.projects{
+    background-image: url(./assets/illustrations/desktop/projectsbg1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+div.footer{
+    text-align: center;
+}
 /* contact us */
 .queries{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
     padding: 5%;
+    text-align: center;
+}
+h1{
+    text-align: center;
 }
 .queries h1{
-    
+
 }
 
-    /* 
-#lastbtn{    
+    /*
+#lastbtn{
     position: relative;
     right: 50%;
     display: block;
@@ -255,7 +377,7 @@ header h1{
 #confused{
     margin: 3em auto 0 auto;
 }
- 
+
 
 .handles div{
     display: inline-block;
@@ -265,7 +387,7 @@ header h1{
 }
 .handles{
     /* background-color: #DCEFFF; */
-    
+
     /* margin: 4em auto 1em auto;
     float: center;
 }
@@ -279,12 +401,12 @@ header h1{
     text-decoration: none;
     color: #2B9DFF;
     border-radius: 1000px;
-    margin-top: 15px; 
+    margin-top: 15px;
     background-color: #DCEFFF;
     padding: 20px;
 }
 .handles div a img{
-    width: 50px;   
+    width: 50px;
 }
 .handles div a p{
     line-height: 10px;
