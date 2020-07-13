@@ -25,6 +25,7 @@ body{
     margin:0;
 }
 @media screen and (min-width: 600px){
+    
     nav{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -82,6 +83,12 @@ body{
         color: white;
         font-weight: bold;
     }
+    div.development h3{
+    color: #2B9DFF;
+    }
+    div.designing h3{
+        color: #2B9DFF;
+    }
     div.whyElements :nth-child(2n){
         margin: 10%;
         padding: 5%;
@@ -97,6 +104,7 @@ body{
     }
 }
 @media screen and (max-width:600px){
+    
     div#p1 img{
         width:60%;
     }
@@ -130,12 +138,17 @@ body{
         font-size: small;
         font-weight: bold;
     }
+    div.services h3{
+        color: #2B9DFF;
+        font-weight: 400;
+    }
     div.right{
         background-image: url(./assets/illustrations/mobile/header1x.png);
         background-repeat: no-repeat;
         /*background-position:100px -350px;*/
-        background-size: cover;
-        overflow: hidden;
+        background-size: 150%;
+        background-position-x: 50px;
+        overflow: visible;
         padding: none;
         width:100%;
     }
@@ -158,7 +171,7 @@ body{
     div.testimonials{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, minmax(500px, auto));
+        grid-template-rows: repeat(1, minmax(500px, auto));
     }
     div.whyElements{
         display: grid;
@@ -188,17 +201,19 @@ body{
 
 h1{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     color: #2B9DFF;
     line-height: 55px;
-    margin: 0 auto 20px auto;
+    margin: 50px auto 20px auto;
 }
 
 h3{
+    font-weight: 400;
     font-size: 20px;
 }
 
 p{
+    font-weight: 400;
     font-size: 15px;
 }
 a{
@@ -254,8 +269,8 @@ div.right img{
 div.left h1{
     text-align: left;
     width:100%;
-    font-size: 4vw;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 100;
 }
 div.left{
     text-align: left;
@@ -290,7 +305,7 @@ header{
 }
 
 .team h1{
-    line-height: 55px;
+    line-height: 30px;
     margin: 0 auto 20px auto;
 }
 
@@ -312,7 +327,7 @@ header{
 
 .person h3{
     margin-bottom: 5px;
-    font-weight: 500;
+    font-weight: 400;
 }
 p.personsays{
     margin: none;
@@ -408,8 +423,8 @@ div.designing :nth-child(6){
     background-color: #2B9DFF;
 }
 div.customerSays img{
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    /* height: 50%; */
 }
 
 
@@ -424,41 +439,57 @@ div.customerSays img{
 
 
 /* what they say about us */
-
+.testimonials{
+    background-color: #F0F8FF;
+}
+div.person.customerSays{
+    margin: 5%;
+}
 
 
 div.person{
+    background-color: #F0F8FF;
     text-align: center;
     padding:50px;
 }
 div#ill-1{
+    align-self: center;
     grid-area: ill-1;
 }
 div#text-1{
+    background-color: #DCEFFF;
     grid-area: text-1;
 }
 div#ill-2{
+    align-self: center;
     grid-area: ill-2;
 }
 div#text-2{
+    background-color: #DCEFFF;
     grid-area: text-2;
 }
 div#ill-3{
+    align-self: center;
     grid-area: ill-3;
 }
 div#text-3{
+    background-color: #DCEFFF;
     grid-area: text-3;
 }
 div#ill-4{
+    align-self: center;
     grid-area: ill-4;
 }
 div#text-4{
+    background-color: #DCEFFF;
     grid-area: text-4;
 }
 div#ill-5{
+    align-self: center;
     grid-area: ill-5;
 }
 div#text-5{
+    background-color: #DCEFFF;
     grid-area: text-5;
 }
 
@@ -467,11 +498,12 @@ div.whyElements :nth-child(n){
 }
 
 div.projects :nth-child(n){
+    align-self: center;
     text-align: center;
 }
 div.projects img{
     width: 30%;
-    height: 50%;
+    /* height: 50%; */
 }
 div.projects{
     background-image: url(./assets/illustrations/desktop/projectsbg1x.png);
@@ -479,6 +511,8 @@ div.projects{
     background-size: cover;
 }
 div.footer{
+    background-color: #DCEFFF;
+    padding: 50px;
     text-align: center;
 }
 div.footer span.social{
@@ -498,13 +532,37 @@ h1{
     text-align: center;
 }
 div.whyElements img{
-    height:90%;
+    /* height causes disturbing image resizing */
+    /* height:90%; */
     width: 80%;
 }
-
+ 
 .queries h1{
 
 }
+
+#lastbtn{ 
+    display: block;
+    margin: 50px auto 0 auto;
+    text-decoration: none !important;
+    color: white !important;
+    height: 50px;
+    background-color: #2B9DFF;
+    max-width: 150px;
+    border-radius: 1000px;
+
+}
+#lastbtn span img{
+    line-height: 50px;
+    vertical-align: middle;
+    width: 35px;
+}
+#callNow{
+    padding: 5px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
 
     /*
 #lastbtn{
