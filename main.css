@@ -24,6 +24,106 @@ body{
     width: 100%;
     margin:0;
 }
+@media screen and (min-width: 600px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, minmax(1000px, auto));
+    }
+    div.members{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1,auto);
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); */
+        grid-template-rows: repeat(2,minmax(600px, auto));
+        row-gap: 20px;
+    }
+    div.testimonials{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, minmax(500px, auto));
+    }
+    div.whyElements{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, minmax(400px, auto));
+        grid-template-areas:
+        "text-1 ill-1"
+        "ill-2 text-2"
+        "text-3 ill-3"
+        "ill-4 text-4"
+        "text-5 ill-5";
+    }
+    div.projects{
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, minmax(400px, auto));
+    }
+    div.right{
+        background-image: url(./assets/illustrations/Desktop/header1x.png);
+        background-repeat: no-repeat;
+        background-position:100px -350px;
+        background-size: cover;
+        overflow: hidden;
+        padding: none;
+        width:100%;
+    }
+    div.testimonial-illus{
+        background-image: url(./assets/illustrations/desktop/customer1x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:600px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, minmax(500px, auto));
+    }
+    div.members{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2,auto);
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); */
+        grid-template-rows: repeat(4,minmax(600px, auto));
+        row-gap: 20px;
+    }
+    div.testimonials{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, minmax(500px, auto));
+    }
+    div.whyElements{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, minmax(400px, auto));
+        grid-template-areas:
+        "text-1"
+        "ill-1"
+        "text-2"
+        "ill-2"
+        "text-3"
+        "ill-3"
+        "text-4"
+        "ill-4"
+        "text-5"
+        "ill-5"
+
+    }
+    div.projects{
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, minmax(400px, auto));
+    }
+}
 
 h1{
     font-size: 25px;
@@ -61,10 +161,6 @@ nav {
     margin-top: inherit;
 }
 
-nav a:first-child{
-    float: left;
-}
-
 nav a img{
     vertical-align: middle;
 }
@@ -87,14 +183,33 @@ nav a:last-child{
 
 /* header */
 
+div.right img{
+    width: 150%;
+    height: 100%;
+    position:relative;
+    top:-300px;
+    right:-100px;
+    overflow-x: auto;
+}
+div.left h1{
+    text-align: left;
+    width:100%;
+    font-size: 4vw;
+    font-weight: bold;
+}
+div.left{
+    text-align: left;
+    padding:5%;
+}
+
 header{
+    width:100%;
     height: 1000px;
     min-height: 1000px;
-    padding: 0 5%;
-    background-image: url(./assets/illustrations/desktop/header1x.png),url(./assets/illustrations/desktop/headerbg1x.png);
-    background-size: initial, initial;
-    background-position: 800px -300px,-50px 0px;
-    background-repeat: no-repeat, no-repeat;
+    background-image:url(./assets/illustrations/desktop/headerbg1x.png);
+    background-size:  initial;
+    background-position:-50px 0px;
+    background-repeat:no-repeat;
     /* background-position-x: 667.22px;
     background-position-y: -329.85px; */
 
@@ -102,15 +217,6 @@ header{
 
 }
 
-
-
-header h1{
-    width: 40%;
-    margin: 2em 0 0 0;
-    text-align: left;
-    line-height: 70px;
-    padding-bottom: 4em;
-}
 
 
 
@@ -162,10 +268,15 @@ header h1{
     width:100%;
     margin:0;
     text-align: center;
-    background-image: url(./assets/illustrations/desktop/Group\ 31.png), url(./assets/illustrations/desktop/services1x.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, auto;
+    background-image: url(./assets/illustrations/desktop/Group\ 31.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 1200px;
+}
+div.service-image img{
+    margin-left:-100px;
+    width:90%;
+    height:70%;
 }
 
 .development img{
@@ -174,12 +285,7 @@ header h1{
 .designing img{
     width: 30px;
 }
-.services{
-    display: grid;
-    grid-template-columns: repeat(2,1fr); */
-    grid-template-rows: repeat(2,minmax(600px, auto));
-    row-gap: 20px;
-}
+
 div.development, div.designing{
     line-height:50px;
     color: white;
@@ -253,6 +359,10 @@ div.designing :nth-child(6){
     border-radius: 0px 50px 50px 0px;
     background-color: #2B9DFF;
 }
+div.customerSays img{
+    width: 50%;
+    height: 50%;
+}
 
 
 
@@ -267,15 +377,8 @@ div.designing :nth-child(6){
 
 /* what they say about us */
 
-div.testimonials{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, minmax(500px, auto));
-}
-div.testimonial-illus{
-    background-image: url(./assets/illustrations/desktop/customer1x.png);
-    background-size: cover;
-}
+
+
 div.person{
     text-align: center;
     padding:50px;
@@ -310,25 +413,11 @@ div#ill-5{
 div#text-5{
     grid-area: text-5;
 }
-div.whyElements{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, minmax(400px, auto));
-    grid-template-areas:
-    "text-1 ill-1"
-    "ill-2 text-2"
-    "text-3 ill-3"
-    "ill-4 text-4"
-    "text-5 ill-5";
-}
+
 div.whyElements :nth-child(n){
     text-align: center;
 }
-div.projects{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, minmax(400px, auto));
-}
+
 div.projects :nth-child(n){
     text-align: center;
 }
@@ -340,7 +429,6 @@ div.projects{
     background-image: url(./assets/illustrations/desktop/projectsbg1x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
 }
 div.footer{
     text-align: center;
@@ -352,13 +440,29 @@ div.footer a{
     text-decoration: none;
     color: #2B9DFF;
 }
+span.social a{
+    background-color: red;
+    border-radius: 10px;
+}
 /* contact us */
 .queries{
     padding: 5%;
     text-align: center;
 }
+img#confused{
+    width:60%;
+    height:85%;
+}
 h1{
     text-align: center;
+}
+div.whyElements img{
+    height:90%;
+    width: 80%;
+}
+div.whyElements :nth-child(2n){
+    margin: 10%;
+    padding: 5%;
 }
 .queries h1{
 
