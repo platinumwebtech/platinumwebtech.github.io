@@ -1,7 +1,10 @@
 /* variables */
 
 
-
+:root{
+    --shadow: 0px 0px 30px 0px rgba(0, 0, 10, 0.2);
+    --whyus:0px 25px 30px 0px rgba(0, 0, 10, 0.2);
+}
 
 
 
@@ -21,9 +24,55 @@ html{
 }
 
 body{
+
+    background-color: #2B9DFF;
+    opacity: 100%;
     width: 100%;
     margin:0;
 }
+
+
+h1{
+    box-shadow: 0 -23px 22px -24px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    color: #424f5b;
+    line-height: 55px;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    background-color: chartreuse;
+    height: 100px;
+    border-radius: 1000px 0 0 0px;
+    width: 100%;
+    transform: translateY(-100px);
+    /* transform: translate(20%, 0px); */
+    margin-right: 0;
+    right: 0px;
+    overflow: hidden;
+    line-height: 100px;
+    
+    /* font-size: 25px;
+    font-weight: 400;
+    color: #2B9DFF;
+    line-height: 55px;
+    margin: 0px auto 0px auto; */
+}
+
+h3{
+    color: #424f5b;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p{
+    color: #424f5b;
+    font-weight: 400;
+    font-size: 15px;
+}
+a{
+
+}
+
+
 @media screen and (min-width: 600px){
     
     nav{
@@ -46,6 +95,9 @@ body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, minmax(500px, auto));
+    }
+    .whyus{
+        background-color: white;
     }
     div.whyElements{
         display: grid;
@@ -95,12 +147,16 @@ body{
     }
     img#confused{
         width:60%;
-        height:85%;
+        /* height:85%; */
+    }
+    div.service-image{
+        align-self: center;
     }
     div.service-image img{
+
         margin-left:-100px;
-        width:90%;
-        height:70%;
+        width:100%;
+        /* height:70%; */
     }
 }
 @media screen and (max-width:600px){
@@ -168,6 +224,9 @@ body{
         grid-template-rows: repeat(4,minmax(600px, auto));
         row-gap: 20px;
     }
+    .whyus{
+        background-color: white;
+    }
     div.testimonials{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -199,27 +258,6 @@ body{
     }
 }
 
-h1{
-    font-size: 25px;
-    font-weight: 400;
-    color: #2B9DFF;
-    line-height: 55px;
-    margin: 50px auto 20px auto;
-}
-
-h3{
-    font-weight: 400;
-    font-size: 20px;
-}
-
-p{
-    font-weight: 400;
-    font-size: 15px;
-}
-a{
-
-}
-
 .buttonOutline{
 
 }
@@ -227,8 +265,10 @@ a{
 
 /* nav */
 nav {
+    background-color:#DCEFFF;
+    z-index: -1;
     line-height: 150px;
-    text-align: right;
+    /* text-align: right; */
 }
 
 #logo {
@@ -267,10 +307,17 @@ div.right img{
     overflow-x: auto;
 }
 div.left h1{
-    text-align: left;
+    all: unset;
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2B9DFF;
+    line-height: 55px;
+    margin: 0px auto 0px auto;
+    /* text-align: left;
     width:100%;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 100; */
 }
 div.left{
     text-align: left;
@@ -337,7 +384,11 @@ p.personsays{
 
 
 /* what we do */
+#whatwecando{
+    background-color: #DCEFFF;
+} 
 .services{
+    background-color: white;
     width:100%;
     margin:0;
     text-align: center;
@@ -439,16 +490,16 @@ div.customerSays img{
 
 
 /* what they say about us */
-.testimonials{
-    background-color: #F0F8FF;
-}
+
 div.person.customerSays{
     margin: 5%;
 }
 
 
 div.person{
-    background-color: #F0F8FF;
+    margin: 10px 50px;
+    box-shadow: var(--whyus);
+    background-color: #DCEFFF;
     text-align: center;
     padding:50px;
 }
@@ -457,6 +508,7 @@ div#ill-1{
     grid-area: ill-1;
 }
 div#text-1{
+    box-shadow: var(--whyus);
     background-color: #DCEFFF;
     grid-area: text-1;
 }
@@ -465,6 +517,7 @@ div#ill-2{
     grid-area: ill-2;
 }
 div#text-2{
+    box-shadow: var(--whyus);
     background-color: #DCEFFF;
     grid-area: text-2;
 }
@@ -473,6 +526,7 @@ div#ill-3{
     grid-area: ill-3;
 }
 div#text-3{
+    box-shadow: var(--whyus);
     background-color: #DCEFFF;
     grid-area: text-3;
 }
@@ -481,6 +535,7 @@ div#ill-4{
     grid-area: ill-4;
 }
 div#text-4{
+    box-shadow: var(--whyus);
     background-color: #DCEFFF;
     grid-area: text-4;
 }
@@ -489,6 +544,7 @@ div#ill-5{
     grid-area: ill-5;
 }
 div#text-5{
+    box-shadow: var(--whyus);
     background-color: #DCEFFF;
     grid-area: text-5;
 }
@@ -510,10 +566,20 @@ div.projects{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.footer{
+    background-color: ;
+}
+.footer p{
+    color: #2B9DFF;
+}
 div.footer{
-    background-color: #DCEFFF;
+    color: #2B9DFF;
+    background-color: #424f5b;
     padding: 50px;
     text-align: center;
+}
+div.footer h6{
+    font-size: 10px;
 }
 div.footer span.social{
     font-size: x-large;
@@ -524,6 +590,7 @@ div.footer a{
 }
 /* contact us */
 .queries{
+    background-color: #2B9DFF;
     padding: 5%;
     text-align: center;
 }
@@ -538,16 +605,19 @@ div.whyElements img{
 }
  
 .queries h1{
+    background-color: #DCEFFF;
 
 }
 
+
 #lastbtn{ 
+    box-shadow: var(--whyus);
     display: block;
     margin: 50px auto 0 auto;
     text-decoration: none !important;
     color: white !important;
     height: 50px;
-    background-color: #2B9DFF;
+    background-color: #424f5b;
     max-width: 150px;
     border-radius: 1000px;
 
@@ -562,6 +632,52 @@ div.whyElements img{
     line-height: 50px;
     vertical-align: middle;
 }
+
+/* _______________--------------------_________________ */
+.testimonials{
+    padding-bottom: 100px;
+}
+.team{
+    background-color: #2B9DFF;
+    padding-bottom: 100px;
+}
+.services{
+    padding-bottom: 100px;
+}
+.whyus{
+    padding-bottom: 100px;
+}
+.projects{
+    padding-bottom: 100px;
+}
+#ourteam{
+    border-radius: unset;
+    background-color: #2B9DFF;
+}
+#whatwecando{
+    border-radius: 0 1000px 0 0;
+    background-color: white;
+}
+#whyus{
+    background-color: white;
+}
+#whattheysay{
+    border-radius: unset;
+
+    background-color: #2B9DFF;
+}
+#ourprojects{
+    background-color: #2B9DFF   ;
+}
+#query{
+    border-radius: unset;
+    /* box-shadow: none; */
+    background-color: #2B9DFF;
+}
+
+
+
+
 
 
     /*
