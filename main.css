@@ -66,7 +66,8 @@ p{
     font-size: 15px;
 }
 a{
-
+ text-decoration: none;
+ color: #424f5b;
 }
 
 
@@ -479,6 +480,15 @@ div.customerSays img{
 
 
 
+/* our projects */
+.projects p{
+    margin-top: 10px;
+    font: 100;
+}
+.projects h3{
+    margin-top: 5px;
+    font-weight: bold;
+}
 
 
 /* why should you consider us */
