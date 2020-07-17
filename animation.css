@@ -1,0 +1,130 @@
+div.queries{
+    overflow: hidden;
+}
+.animation-element.query-animation.in-view{
+    animation: img 1s ease-out;
+}
+@keyframes img{
+    0%{transform: translateY(-1000px);}
+    70%{transform: translateY(100px);}
+    100%{transform: tanslateY(0px);}
+}
+div.testimonial-illus{
+    overflow: hidden;
+}
+.animation-element.bg.in-view{
+    animation: new 1s linear;
+}
+@keyframes new{
+    0%{background-position:1000px 0px;}
+    70%{background-position:-20px 0px;}
+    100%{background-position:0px 0px;}
+}
+div.services{
+    overflow: hidden;
+}
+.animation-element.bar1.in-view{
+    transform: translateX(1000px);
+    animation:abc 0.5s ease-in forwards;
+
+}
+.animation-element.bar2.in-view{
+    transform: translateX(1000px);
+    animation:abc .5s ease-in 0.5s forwards;
+}
+.animation-element.bar3.in-view{
+    transform: translateX(1000px);
+    animation:abc 0.5s ease-in 1s forwards;
+}
+.animation-element.bar4.in-view{
+    transform: translateX(1000px);
+    animation:abc 0.5s ease-in 1.5s forwards;
+}
+.animation-element.bar5.in-view{
+    transform: translateX(1000px);
+    animation:abc 0.5s ease-in 2s forwards;
+}
+.animation-element.bar6.in-view{
+    transform: translateX(-1000px);
+    animation:abc 0.5s ease-in forwards;
+
+}
+.animation-element.bar7.in-view{
+    transform: translateX(-1000px);
+    animation:abc .5s ease-in 0.5s forwards;
+}
+.animation-element.bar8.in-view{
+    transform: translateX(-1000px);
+    animation:abc 0.5s ease-in 1s forwards;
+}
+.animation-element.bar9.in-view{
+    transform: translateX(-1000px);
+    animation:abc 0.5s ease-in 1.5s forwards;
+}
+.animation-element.bar10.in-view{
+    transform: translateX(-1000px);
+    animation:abc 0.5s ease-in 2s forwards;
+}
+@keyframes abc{
+    0%{opacity:0;}
+    100%{transform: translateX(0px);opacity:1;}
+}
+@keyframes bcd{
+    0%{transform: translateX(-1000px);opacity:0;}
+    100%{transform: translateX(0px);opacity:1;}
+}
+div.team{
+    overflow: hidden;
+}
+.animation-element.person-animation{
+    transform: translateY(500px);
+}
+.animation-element.person-animation.in-view{
+    animation: team 0.2s linear forwards;
+}
+@keyframes team{
+    0%{}
+    100%{transform: translateY(0px);}
+}
+div.whyus{
+    overflow:hidden;
+}
+.animation-element.slide-right.in-view{
+    animation: right 1s ease-in;
+}
+.animation-element.slide-left.in-view{
+    animation: left 1s ease-in;
+}
+@keyframes left{
+    0%{transform: translateX(1000px);}
+    100%{transform:translateX(0px);}
+}
+@keyframes right{
+    0%{transform: translateX(-1000px);}
+    100%{transform:translateX(0px);}
+}
+.animation-element.p1.in-view{
+    animation: img1 0.5s linear;
+}
+.animation-element.p2.in-view{
+    animation: img2 0.5s linear;
+}
+@keyframes img1{
+    0%{transform: translate(100%, -100%);}
+    100%{transform: translate(0px, 0px);}
+}
+@keyframes img2{
+    0%{transform: translate(-100%, -100%);}
+    100%{transform: translate(0px, 0px);}
+}
+div.left{
+    overflow:hidden;
+}
+.animation-element.call{
+    animation: call 1s ease-out;
+}
+@keyframes call{
+    0%{transform: translateY(-1000px);}
+    70%{transform: translateY(100px);}
+    100%{transform: translateY(0px);}
+}

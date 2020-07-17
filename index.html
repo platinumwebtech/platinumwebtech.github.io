@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery.js"> </script>
+    <script src="style.js"> </script>
+    <link rel="stylesheet" href="./animation.css">
     <link rel="stylesheet" href="./main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
@@ -22,7 +25,7 @@
             /></a>
             <h1>Working to Expand Your Business<br> One Pixel at a Time</h1>
             <!-- <a href="tel:+917051016552" class="buttonOutline">CALL NOW</a> -->
-            <a href="tel:+917051016552" class="buttonOutline" id="lastbtn"><span><img src="./assets/logos/finalcall.png" alt="" /></span><span id="callNow">Call Us Now</span></a>
+            <a href="tel:+917051016552" class="buttonOutline animation-element call" id="lastbtn"><span><img src="./assets/logos/finalcall.png" alt="" /></span><span id="callNow">Call Us Now</span></a>
 
         </div>
         <div class="right">
@@ -35,7 +38,7 @@
       </h1>
     <div class="team">
 
-      <div class="members">
+      <div class="members animation-element person-animation">
         <div class="person">
           <img src="./assets/face/ShadaabPng.png" alt="" />
           <h3>Ahmed Shadaab</h3>
@@ -56,38 +59,38 @@
 
         <div class="development grid">
             <h3>Development</h3>
-          <div id="abc">
+          <div id="abc" class="animation-element bar1">
             <span>Android App Development</span>
           </div>
-          <div id="abc">
+          <div id="abc" class="animation-element bar2">
             <span>iOS App Development</span>
           </div>
-          <div id="abc">
+          <div id="abc" class="animation-element bar3">
             <span>Website Development</span>
           </div>
-          <div id="abc">
+          <div id="abc" class="animation-element bar4">
             <span>Search Engine Optimisation</span>
           </div>
-          <div id="abc">
+          <div id="abc" class="animation-element bar5">
             <span>Webapp Development</span>
           </div>
         </div>
 
         <div class="designing">
           <h3>Designing</h3>
-          <div id="def">
+          <div id="def" class="animation-element bar6">
             <span>Logo Design</span>
           </div>
-          <div id="def">
+          <div id="def" class="animation-element bar7">
             <span>Marketing and Advertising Design</span>
           </div>
-          <div id="def">
+          <div id="def" class="animation-element bar8">
             <span>UI/UX Design</span>
           </div>
-          <div id="def">
+          <div id="def" class="animation-element bar9">
             <span>Motion Garphic Design</span>
           </div>
-          <div id="def">
+          <div id="def" class="animation-element bar10">
             <span>Art and Illustration Design</span>
           </div>
         </div>
@@ -101,7 +104,7 @@
           <div id="ill-1">
               <img src="./assets/illustrations/whyUs/2x/exp.png">
           </div>
-          <div id="text-1">
+          <div id="text-1" class="animation-element slide-right">
               <h3>Experienced HTML Designers</h3>
               <p>
                 Designing a number of landing pages for Google ad campaigns as well
@@ -113,7 +116,7 @@
           <div id="ill-2">
               <img src="./assets/illustrations/whyUs/2x/seo.png">
           </div>
-          <div id="text-2">
+          <div id="text-2" class="animation-element slide-left">
               <h3>Inbuilt SEO Enhancement</h3>
               <p>
                 Understanding the process Google crawling, our team of landing page
@@ -125,7 +128,7 @@
           <div id="ill-3">
               <img src="./assets/illustrations/whyUs/2x/w3c.png">
           </div>
-          <div id="text-3">
+          <div id="text-3"  class="animation-element slide-right">
               <h3>W3C Validation</h3>
               <p>
                 Following the W3C standards in every website and landing page
@@ -137,7 +140,7 @@
           <div id="ill-4">
               <img src="./assets/illustrations/whyUs/2x/browser.png">
           </div>
-          <div id="text-4">
+          <div id="text-4" class="animation-element slide-left">
               <h3>Multiple Browser Capability</h3>
               <p>
                 Apart from being familiar with popular testing tools that includes
@@ -150,7 +153,7 @@
           <div id="ill-5">
               <img src="./assets/illustrations/whyUs/2x/support.png">
           </div>
-          <div id="text-5">
+          <div id="text-5" class="animation-element slide-right">
               <h3>Anytime Customer Support</h3>
               <p>
                 Understanding the importance of our client’s project delivery and
@@ -174,7 +177,7 @@
           them."
         </p>
       </div>
-      <div class="testimonial-illus">
+      <div class="testimonial-illus animation-element bg">
       </div>
     </div>
 
@@ -194,12 +197,12 @@
     <h1 id="ourprojects">Our Projects </h1>
     <div class="projects">
         <div id="p1">
-            <img src="./assets/projects/miniGravity.png" alt="" />
+            <img src="./assets/projects/miniGravity.png" class="animation-element p1" alt="" />
             <h3> Mini Gravity </h3>
             <p> A non-profit startup. <br><a href="https://minigravity.github.io"> Visit website </a> </p>
         </div>
         <div id="p2">
-            <img src="./assets/projects/nor.png" alt="" />
+            <img src="./assets/projects/nor.png" class="animation-element p2" alt="" />
             <h3> Norow </h3>
             <p> Product Service. <br><a href="https://xd.adobe.com/view/9e59caef-8519-48a5-751a-08402c376bac-e868/screen/431034a6-cd1e-4a39-a197-c3702bd47c20/Android-Mobile-7"> Visit website </a> </p>
         </div>
@@ -210,6 +213,7 @@
         src="./assets/illustrations/desktop/queries1x.png"
         alt=""
         id="confused"
+        class="animation-element query-animation"
       />
       <!-- <div class="call"> -->
         <!-- <h3>Call us Now</h3> -->
